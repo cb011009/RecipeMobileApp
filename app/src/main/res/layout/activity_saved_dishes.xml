@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SavedDishesActivity">
+
+    <!-- Profile button layout -->
+    <include layout="@layout/profile_button_layout"
+        android:id="@+id/profile_button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"/>
+
+    <!-- TextView for "Saved Dishes!" heading -->
+    <TextView
+        android:id="@+id/uploadRecipeHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saved Recipies"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_button_layout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- TextView for instruction -->
+    <TextView
+        android:id="@+id/instructionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easily access and manage your saved dishes."
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:layout_below="@id/uploadRecipeHeading"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:layout_marginBottom="10dp"/>
+
+
+    <!-- RecyclerView for displaying saved dishes -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/savedDishesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/instructionTextView"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <!-- You can customize the layout further if needed -->
+
+</RelativeLayout>
+
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        tools:context=".SavedDishesActivity">
+
+
+        <TextView
+            android:id="@+id/uploadRecipeHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Dishes!"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"/>
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/savedDishesRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/uploadRecipeHeading"
+        android:layout_marginTop="16dp"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp"/>
+
+
+
+    </RelativeLayout>-->
+

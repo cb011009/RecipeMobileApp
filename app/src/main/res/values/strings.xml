@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">recipeMobileApp</string>
+    <string name="login">Login</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="register">Register</string>
+    <string name="click_to_login">Click to login</string>
+    <string name="click_to_register">Click To Register</string>
+    <string name="hello_world">Hello World</string>
+    <string name="log_out">Log Out</string>
+    <string name="phone">Phone number</string>
+
+</resources>

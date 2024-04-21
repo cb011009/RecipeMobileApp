@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorCurrentUser">#FF4081</color>
+    <color name="colorFriend">#00BFFF</color>
+    <color name="horizontalLineColor">#808080</color> <!-- Use any grey color you prefer -->
+
+
+
+
+    <!-- Define your light mode colors -->
+    <color name="my_light_primary">#FF7AA5</color>
+    <color name="my_light_primary_dark">#D81B60</color>
+    <color name="my_light_accent">#FFC107</color>
+
+    <!-- Define your dark mode colors -->
+    <color name="my_dark_primary">#FF7AA5</color>
+    <color name="my_dark_primary_dark">#1565C0</color>
+    <color name="my_dark_accent">#FF9800</color>
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fillViewport="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavigationView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <include layout="@layout/profile_button_layout" />
+
+            <TextView
+                android:id="@+id/uploadRecipeHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post A Recipe!"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="25dp"
+                />
+
+            <TextView
+                android:id="@+id/placeholderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Take A Picture Of Your Dish Here!"
+                android:textSize="19sp"
+                android:visibility="visible"
+                android:layout_marginBottom="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="35dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="8dp"
+                    >
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dashed_border">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true" />
+
+                        <Button
+                            android:id="@+id/takePhotoButton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:elevation="2dp"
+                            android:text="Capture Dish"
+                            android:drawableLeft="@drawable/baseline_camera_alt_24"
+                            android:backgroundTint="@color/my_light_primary"
+                            android:layout_margin="20dp"
+                            android:textSize="17sp"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                             />
+                    </FrameLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+           <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dish Title :"
+                android:paddingBottom="8dp"
+                android:textSize="19sp" />
+
+            <EditText
+                android:id="@+id/dishNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:hint="Enter dish name"
+                android:inputType="text"
+                android:background="@drawable/rounded_border"/>
+
+
+           <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List your Ingridents here :"
+                android:paddingBottom="8dp"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/ingredientsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1. 3g Of Sugar"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border"/>
+
+           <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preparation Steps :"
+                android:paddingBottom="8dp"
+                android:textSize="19sp"/>
+
+            <EditText
+                android:id="@+id/preparationStepsEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="1. Add the sugar to the mix"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_border"/>
+
+            <Button
+                android:id="@+id/submitButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="Submit" />
+
+        </LinearLayout>
+    </ScrollView>
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </RelativeLayout>
+
+
+

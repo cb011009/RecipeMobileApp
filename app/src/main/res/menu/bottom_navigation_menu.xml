@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:title="Home"
+        android:icon="@drawable/baseline_camera_alt_24" />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="Search"
+        android:icon="@drawable/baseline_search_24" />
+
+    <item
+        android:id="@+id/action_user_dishes"
+        android:title="User Dishes"
+        android:icon="@drawable/baseline_fastfood_24" />
+
+    <item
+        android:id="@+id/action_friends"
+        android:title="Dish Chat"
+        android:icon="@drawable/baseline_chat_24" />
+
+    <item
+        android:id="@+id/action_saved"
+        android:title="Dish Chat"
+        android:icon="@drawable/baseline_image_24" />
+
+
+
+</menu>
